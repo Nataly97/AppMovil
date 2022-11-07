@@ -6,6 +6,7 @@ import android.os.Bundle
 import android.widget.Button
 import android.widget.TextView
 import com.tiendaunacho.R
+import com.tiendaunacho.view.ui.fragments.HomeFragment
 
 class LoginActivity : AppCompatActivity() {
 
@@ -20,7 +21,7 @@ class LoginActivity : AppCompatActivity() {
         RecuperarButton=findViewById(R.id.Brecuperar)
 
         InicioButton.setOnClickListener {
-            startActivity(Intent(this,HomeActivity::class.java ))
+            startActivity(Intent(this, HomeActivity::class.java))
         }
         RegistroButton.setOnClickListener {
             startActivity(Intent(this, RegistroActivity::class.java))

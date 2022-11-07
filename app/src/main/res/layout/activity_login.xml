@@ -58,13 +58,14 @@
         android:layout_alignParentStart="true"
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
-        android:layout_marginStart="119dp"
-        android:layout_marginEnd="129dp"
+        android:layout_marginStart="120dp"
+        android:layout_marginEnd="120dp"
         android:layout_marginBottom="119dp"
         android:fontFamily="@font/opensansitalic"
+        android:gravity="center"
         android:text="@string/recuperar"
         android:textColor="#009688"
-        android:textSize="10dp"
+        android:textSize="15dp"
         android:textStyle="italic" />
 
     <EditText
@@ -76,12 +77,13 @@
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
         android:layout_marginEnd="100dp"
-        android:layout_marginBottom="356dp"
+        android:layout_marginBottom="369dp"
+        android:background="@drawable/style_borde_texto"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Email"
         android:fontFamily="@font/opensansitalic"
-        android:background="@drawable/style_borde_texto"/>
+        android:hint="Email"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
     <EditText
         android:id="@+id/editTextTextPersonName8"
@@ -91,13 +93,14 @@
         android:layout_alignParentEnd="true"
         android:layout_alignParentBottom="true"
         android:layout_marginStart="100dp"
-        android:layout_marginEnd="101dp"
+        android:layout_marginEnd="100dp"
         android:layout_marginBottom="301dp"
+        android:background="@drawable/style_borde_texto"
         android:ems="10"
-        android:inputType="textPersonName"
-        android:hint="Contraseña"
         android:fontFamily="@font/opensansitalic"
-        android:background="@drawable/style_borde_texto"/>
+        android:hint="Contraseña"
+        android:inputType="textPersonName"
+        android:minHeight="48dp" />
 
 
 </RelativeLayout>
