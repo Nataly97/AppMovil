@@ -24,7 +24,9 @@
             <ImageView
                 android:layout_width="match_parent"
                 android:layout_height="match_parent"
-                android:src="@drawable/uninacho"></ImageView>
+                android:src="@drawable/uninacho">
+
+            </ImageView>
 
         </RelativeLayout>
 
@@ -70,7 +72,8 @@
                             android:text="Libreria"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -104,7 +107,9 @@
                             android:text="Carrito"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -127,7 +132,7 @@
                         <ImageView
                             android:layout_width="100dp"
                             android:layout_height="100dp"
-                            android:src="@drawable/perfil"
+                            android:src="@drawable/perfilpersona"
                             android:id ="@+id/cardPerfil">
 
                         </ImageView>
@@ -139,7 +144,9 @@
                             android:text="Mi Cuenta"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -174,7 +181,9 @@
                             android:text="Lista Deseos"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -209,7 +218,8 @@
                             android:text="Ruta Pedido"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
 
@@ -244,7 +254,9 @@
                             android:text="Ayuda"
                             android:textAlignment="center"
                             android:textSize="18dp"
-                            android:textStyle="bold"></TextView>
+                            android:textStyle="bold">
+
+                        </TextView>
                     </LinearLayout>
                 </androidx.cardview.widget.CardView>
             </GridLayout>
