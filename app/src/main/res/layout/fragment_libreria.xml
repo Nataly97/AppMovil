@@ -34,7 +34,7 @@
         android:layout_height="wrap_content"
         app:itemIconTint="@color/white"
         android:background="@color/color_orange"
-        android:layout_marginTop="550dp"
+        android:layout_marginTop="705dp"
         app:menu="@menu/menu_navigaton_bar">
 
    </com.google.android.material.bottomnavigation.BottomNavigationView>
