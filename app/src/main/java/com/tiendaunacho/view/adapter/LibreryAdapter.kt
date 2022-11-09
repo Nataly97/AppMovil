@@ -32,7 +32,7 @@ class LibreryAdapter:RecyclerView.Adapter <LibreryAdapter.ViewHolder>() {
         }
     }
         val titles= arrayOf("libro1","libro2","libro3","libro4","libro5")
-        val descripcion= arrayOf("lomejor del libro1","lomejor del libro2","lomejor del libro3","lomejor del libro4","lomejor del libro5")
+        val descripcion= arrayOf("lo mejor del libro1","lo mejor del libro2","lo mejor del libro3","lo mejor del libro4","lo mejor del libro5")
         val precio= arrayOf("$10.000","$20.000","$30.000","$40.000","$50.000")
         val image= arrayOf(R.drawable.cronicadeunamuerteaninciada,R.drawable.elamorenlostiemposdelcolera,R.drawable.elcoronelnotienequienleescriba,R.drawable.cronicadeunamuerteaninciada,R.drawable.lahojarasca,R.drawable.lamalahora)
 

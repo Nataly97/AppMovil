@@ -36,7 +36,6 @@ class LibreriaFragment : Fragment() {
                 R.id.perfilpersona -> findNavController().navigate(R.id.action_libreriaFragment_to_perfilFragment)
                 R.id.map -> findNavController().navigate(R.id.action_libreriaFragment_to_mapaFragment)
             }
-
         }
     }
 

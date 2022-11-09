@@ -51,25 +51,45 @@
         android:id="@+id/comprasFragment"
         android:name="com.tiendaunacho.view.ui.fragments.ComprasFragment"
         android:label="fragment_compras"
-        tools:layout="@layout/fragment_compras" />
+        tools:layout="@layout/fragment_compras" >
+        <action
+            android:id="@+id/action_comprasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/deseosFragment"
         android:name="com.tiendaunacho.view.ui.fragments.DeseosFragment"
         android:label="fragment_deseos"
-        tools:layout="@layout/fragment_deseos" />
+        tools:layout="@layout/fragment_deseos" >
+        <action
+            android:id="@+id/action_deseosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/perfilFragment"
         android:name="com.tiendaunacho.view.ui.fragments.PerfilFragment"
         android:label="fragment_perfil"
-        tools:layout="@layout/fragment_perfil" />
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/ayudaFragment"
         android:name="com.tiendaunacho.view.ui.fragments.AyudaFragment"
         android:label="fragment_ayuda"
-        tools:layout="@layout/fragment_ayuda" />
+        tools:layout="@layout/fragment_ayuda" >
+        <action
+            android:id="@+id/action_ayudaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
     <fragment
         android:id="@+id/mapaFragment"
         android:name="com.tiendaunacho.view.ui.fragments.MapaFragment"
         android:label="fragment_mapa"
-        tools:layout="@layout/fragment_mapa" />
+        tools:layout="@layout/fragment_mapa" >
+        <action
+            android:id="@+id/action_mapaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+    </fragment>
 </navigation>

@@ -5,7 +5,40 @@
     android:layout_height="match_parent"
     tools:context=".view.ui.fragments.PerfilFragment">
 
-    <!-- TODO: Update blank fragment layout -->
+    <ImageView
+        android:id="@+id/fotoperfil"
+        android:layout_width="match_parent"
+        android:layout_height="194dp"
+        android:src="@drawable/camara">
+
+
+    </ImageView>
+
+    <Button
+        android:id="@+id/btmcamara"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="60dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/color_orange"
+        android:text="camara"
+        android:textStyle="bold">
+
+    </Button>
+
+
+    <Button
+        android:id="@+id/btmgaleria"
+        android:layout_width="109dp"
+        android:layout_height="57dp"
+        android:layout_marginLeft="240dp"
+        android:layout_marginTop="400dp"
+        android:backgroundTint="@color/color_blue"
+        android:text="galeria"
+        android:textStyle="bold">
+
+    </Button>
+
     <TextView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
