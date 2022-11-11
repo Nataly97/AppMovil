@@ -18,6 +18,7 @@ import com.tiendaunacho.R
 
 class PerfilFragment : Fragment() {
 
+
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
         savedInstanceState: Bundle?
@@ -52,5 +53,16 @@ class PerfilFragment : Fragment() {
         }
     }
 
- }
+   /* Metodo que muestra el Button navigation bar */
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+
+        val cardCompras=view.findViewById<ImageView>(R.id.cardCarrito)
+        cardCompras.setOnClickListener { (findNavController().navigate(R.id.action_homeFragment_to_comprasFragment))}
+    }
+
+
+
+}
 

@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "1032534367461",
+    "project_id": "tiendaunacho",
+    "storage_bucket": "tiendaunacho.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1032534367461:android:7e1c36f1d7d7981713c80c",
+        "android_client_info": {
+          "package_name": "com.tiendaunacho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1032534367461-aas4g8orge3pe7p6cnisq1ja41hgm7iq.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyB90YgIodKkIBhCCX7zjHgGNpAJeuDYukk"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1032534367461-aas4g8orge3pe7p6cnisq1ja41hgm7iq.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
