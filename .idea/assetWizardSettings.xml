@@ -306,7 +306,7 @@
                                 <PersistentState>
                                   <option name="values">
                                     <map>
-                                      <entry key="url" value="jar:file:/C:/Program%20Files/Android/Android%20Studio/plugins/android/lib/android.jar!/images/material/icons/materialicons/logout/baseline_logout_24.xml" />
+                                      <entry key="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/icons/material/materialicons/edit/baseline_edit_24.xml" />
                                     </map>
                                   </option>
                                 </PersistentState>
@@ -316,8 +316,8 @@
                         </option>
                         <option name="values">
                           <map>
-                            <entry key="color" value="991414" />
-                            <entry key="outputName" value="cerrar_sesion" />
+                            <entry key="color" value="246ac6" />
+                            <entry key="outputName" value="ic_baseline_edit_24" />
                             <entry key="sourceFile" value="D:\FORMACION\1 PROGRAMACION\CICLO 4\Sprint 2\AppMovil" />
                           </map>
                         </option>

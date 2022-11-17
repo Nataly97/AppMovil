@@ -6,9 +6,18 @@ import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
 import androidx.recyclerview.widget.RecyclerView
+import com.squareup.picasso.Picasso
 import com.tiendaunacho.R
+import com.tiendaunacho.model.libros
+import android.content.Context
 
-class LibreryAdapter:RecyclerView.Adapter<LibreryAdapter.ViewHolder>() {
+class LibreryAdapter(private val context: Context): RecyclerView.Adapter<LibreryAdapter.ViewHolder>() {
+    private var libroslista= mutableListOf<libros>()
+
+    fun setListData(data:MutableList<libros>){
+        libroslista=data
+    }
+
     override fun onCreateViewHolder(viewGroup: ViewGroup, i:Int): ViewHolder {
         val v = LayoutInflater.from(viewGroup.context).inflate(R.layout.card_view_librery, viewGroup, false)
         return ViewHolder(v)
@@ -16,33 +25,26 @@ class LibreryAdapter:RecyclerView.Adapter<LibreryAdapter.ViewHolder>() {
     }
 
     inner class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-        var itemImage: ImageView
-        var itemTitle: TextView
-        var itemDescripcion: TextView
-        var itemPrecio: TextView
-
-        init {
-            itemImage=ItemView.findViewById(R.id.image)
-            itemTitle=ItemView.findViewById(R.id.title)
-            itemDescripcion=ItemView.findViewById(R.id.descripcion)
-            itemPrecio=ItemView.findViewById(R.id.precio)
-
-        }
+       fun binWew(libro:libros){
+           itemView.findViewById<TextView>(R.id.title).text=libro.titulo
+           itemView.findViewById<TextView>(R.id.descripcion).text=libro.descripcion
+           itemView.findViewById<TextView>(R.id.precio).text=libro.precio
+           Picasso.with(context).load(libro.image).into(itemView.findViewById<ImageView>(R.id.image))
+       }
     }
-    val titles= arrayOf("libro1","libro2","libro3","libro4","libro5")
-    val descripcion= arrayOf("lo mejor del libro1","lo mejor del libro2","lo mejor del libro3","lo mejor del libro4","lo mejor del libro5")
-    val precio= arrayOf("$10.000","$20.000","$30.000","$40.000","$50.000")
-    val image= arrayOf(R.drawable.cronicadeunamuerteaninciada,R.drawable.elamorenlostiemposdelcolera,R.drawable.elcoronelnotienequienleescriba,R.drawable.cronicadeunamuerteaninciada,R.drawable.lahojarasca,R.drawable.lamalahora)
+
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i:Int)  {
-        viewHolder.itemTitle.text=titles[i]
-        viewHolder.itemDescripcion.text=descripcion[i]
-        viewHolder.itemPrecio.text=precio[i]
-        viewHolder.itemImage.setImageResource(image[i])
+        val libro=libroslista[i]
+        viewHolder.binWew(libro)
     }
 
     override fun getItemCount(): Int {
-        return titles.size
+        return if(libroslista.size>0){
+            libroslista.size
+        }else{
+            0
+        }
 
     }
 

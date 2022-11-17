@@ -17,8 +17,8 @@
         android:id="@+id/btmcamara"
         android:layout_width="109dp"
         android:layout_height="57dp"
-        android:layout_marginLeft="60dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginLeft="70dp"
+        android:layout_marginTop="250dp"
         android:backgroundTint="@color/color_orange"
         android:text="camara"
         android:textStyle="bold">
@@ -29,26 +29,38 @@
         android:id="@+id/btmgaleria"
         android:layout_width="109dp"
         android:layout_height="57dp"
-        android:layout_marginLeft="275dp"
-        android:layout_marginTop="400dp"
+        android:layout_marginLeft="285dp"
+        android:layout_marginTop="250dp"
         android:backgroundTint="@color/color_blue"
         android:text="galeria"
         android:textStyle="bold">
     </Button>
 
-    <com.google.android.material.bottomnavigation.BottomNavigationView
-        android:id="@+id/buttonnavigation"
-        android:layout_width="match_parent"
+    <EditText
+        android:id="@+id/nombrecompleto"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:background="@color/color_orange"
-        android:layout_marginTop="937dp"
-        app:itemIconTint="@color/black"
-        app:layout_constraintBottom_toBottomOf="parent"
-        tools:ignore="MissingConstrains"
-        app:menu="@menu/menu_navigaton_bar" >
+        android:layout_marginLeft="175dp"
+        android:layout_marginTop="350dp"
+        android:background="@drawable/style_borde_texto"
+        android:minHeight="48dp"
+        android:text="Jigen Drdyf"
+        android:textIsSelectable="false">
 
-    </com.google.android.material.bottomnavigation.BottomNavigationView>
+    </EditText>
 
+    <ImageButton
+        android:id="@+id/edicionnombre"
+        android:layout_width="48dp"
+        android:layout_height="48dp"
+        android:layout_marginLeft="320dp"
+        android:layout_marginTop="350dp"
+        android:src="@drawable/ic_baseline_edit_24"
+        tools:ignore="SpeakableTextPresentCheck"
+        android:background="@drawable/style_borde_boton">
+
+    </ImageButton>
+    
 
 
 </FrameLayout>
