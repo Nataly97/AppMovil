@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">TiendaUnacho</string>
+    <string name="recuperar"><u>Recuperar contraseña</u></string>
+    <string name="recuperarcontraseña">Recupera Contraseña</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="ApiMap" templateMergeStrategy="preserve" translatable="false">AIzaSyCOpTwuZICDL5SnBj3t5xIFCV6ezo29BSg</string>
+</resources>

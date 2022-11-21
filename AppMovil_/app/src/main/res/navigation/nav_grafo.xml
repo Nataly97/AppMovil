@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_grafo"
+    app:startDestination="@id/homeFragment">
+
+    <fragment
+        android:id="@+id/homeFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.HomeFragment"
+        android:label="fragment_home"
+        tools:layout="@layout/fragment_home" >
+        <action
+            android:id="@+id/action_homeFragment_to_libreriaFragment"
+            app:destination="@id/libreriaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_comprasFragment"
+            app:destination="@id/comprasFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_deseosFragment"
+            app:destination="@id/deseosFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_ayudaFragment"
+            app:destination="@id/ayudaFragment" />
+        <action
+            android:id="@+id/action_homeFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/libreriaFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.LibreriaFragment"
+        android:label="fragment_libreria"
+        tools:layout="@layout/fragment_libreria" >
+        <action
+            android:id="@+id/action_libreriaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_libreriaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_libreriaFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_libreriaFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/comprasFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.ComprasFragment"
+        android:label="fragment_compras"
+        tools:layout="@layout/fragment_compras" >
+        <action
+            android:id="@+id/action_comprasFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/deseosFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.DeseosFragment"
+        android:label="fragment_deseos"
+        tools:layout="@layout/fragment_deseos" >
+    </fragment>
+    <fragment
+        android:id="@+id/perfilFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.PerfilFragment"
+        android:label="fragment_perfil"
+        tools:layout="@layout/fragment_perfil" >
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_self"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment2"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_mapaFragment2"
+            app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_homeFragment3"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_perfilFragment_to_loginActivity"
+            app:destination="@id/loginActivity" />
+    </fragment>
+    <fragment
+        android:id="@+id/ayudaFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.AyudaFragment"
+        android:label="fragment_ayuda"
+        tools:layout="@layout/fragment_ayuda" >
+    </fragment>
+    <fragment
+        android:id="@+id/mapaFragment"
+        android:name="com.tiendaunacho.view.ui.fragments.MapaFragment"
+        android:label="fragment_mapa"
+        tools:layout="@layout/fragment_mapa" >
+    </fragment>
+    <activity
+        android:id="@+id/loginActivity"
+        android:name="com.tiendaunacho.view.ui.activities.LoginActivity"
+        android:label="activity_login"
+        tools:layout="@layout/activity_login" />
+</navigation>
