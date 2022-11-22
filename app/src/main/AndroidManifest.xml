@@ -6,6 +6,10 @@
         android:required="true"
         android:name="android.hardware.camera">
     </uses-feature>
+    
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION"
+        tools:ignore="CoarseFineLocation">
+    </uses-permission>
 
     <application
         android:allowBackup="true"
@@ -17,6 +21,12 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.TiendaUnacho"
         tools:targetApi="31">
+
+        <meta-data
+            android:name="com.google.android.geo.API_KEY"
+            android:value="@string/ApiMap">
+        </meta-data>
+
         <activity
             android:name=".view.ui.activities.RegistroActivity"
             android:exported="false">

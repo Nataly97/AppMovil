@@ -5,6 +5,7 @@ import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Toast
 import androidx.lifecycle.Observer
 import androidx.lifecycle.ViewModelProvider
 import androidx.navigation.fragment.findNavController
@@ -13,17 +14,21 @@ import androidx.recyclerview.widget.RecyclerView
 import com.google.android.material.bottomnavigation.BottomNavigationView
 import com.google.firebase.auth.FirebaseAuth
 import com.google.firebase.auth.ktx.auth
+import com.google.firebase.firestore.FirebaseFirestore
 import com.google.firebase.ktx.Firebase
 import com.tiendaunacho.R
+import com.tiendaunacho.model.libros
 import com.tiendaunacho.view.adapter.LibreryAdapter
+import com.tiendaunacho.view.adapter.OnBookItemClickListener
 import com.tiendaunacho.viewmodel.LibraryViewModel
 
-
-class LibreriaFragment : Fragment() {
+@Suppress("DEPRECATION")
+class LibreriaFragment : Fragment(), OnBookItemClickListener {
     lateinit var recycleLib:RecyclerView
     lateinit var firebaseAuth: FirebaseAuth
     lateinit var adapter: LibreryAdapter
-    private val viewModel by lazy { ViewModelProvider(this).get(LibraryViewModel::class.java)}
+    val database:FirebaseFirestore=FirebaseFirestore.getInstance()
+    private val viewmodel by lazy { ViewModelProvider(this).get(LibraryViewModel::class.java)}
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -37,14 +42,14 @@ class LibreriaFragment : Fragment() {
     ): View? {
         val view= inflater.inflate(R.layout.fragment_libreria, container, false)
         recycleLib=view.findViewById(R.id.recyclerview)
-        adapter=LibreryAdapter(requireContext())
+        adapter=LibreryAdapter(requireContext(),this)
         recycleLib.layoutManager=LinearLayoutManager(context)
         recycleLib.adapter=adapter
         observeData()
         return view
     }
     fun observeData(){
-        viewModel.libraryData().observe(viewLifecycleOwner, Observer {
+        viewmodel.libraryData().observe(viewLifecycleOwner, Observer {
             adapter.setListData(it)
             adapter.notifyDataSetChanged()
         })
@@ -65,6 +70,26 @@ class LibreriaFragment : Fragment() {
                 }
             }
         }
-    } 
+    }
+
+    override fun onItemclick(libro: libros, position: Int) {
+        val titulo:String=libro.titulo
+        val descripcion:String=libro.descripcion
+        val precio:String=libro.precio
+        val image:String=libro.image
+        val dato= hashMapOf(
+            "titulo" to titulo,
+            "descripcion" to descripcion,
+            "precio" to precio,
+            "image" to image
+        )
+        database.collection("compras")
+            .document(titulo)
+            .set(dato)
+            .addOnSuccessListener {
+                Toast.makeText(context,"EL libro fue añadido al carrito ", Toast.LENGTH_SHORT).show()
+            }
+
+    }
 
 }

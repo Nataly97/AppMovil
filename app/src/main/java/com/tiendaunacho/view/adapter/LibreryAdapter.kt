@@ -10,8 +10,9 @@ import com.squareup.picasso.Picasso
 import com.tiendaunacho.R
 import com.tiendaunacho.model.libros
 import android.content.Context
+import android.widget.ImageButton
 
-class LibreryAdapter(private val context: Context): RecyclerView.Adapter<LibreryAdapter.ViewHolder>() {
+class LibreryAdapter(private val context: Context,var clickListener: OnBookItemClickListener): RecyclerView.Adapter<LibreryAdapter.ViewHolder>() {
     private var libroslista= mutableListOf<libros>()
 
     fun setListData(data:MutableList<libros>){
@@ -25,18 +26,22 @@ class LibreryAdapter(private val context: Context): RecyclerView.Adapter<Librery
     }
 
     inner class ViewHolder(ItemView: View) : RecyclerView.ViewHolder(ItemView) {
-       fun binWew(libro:libros){
+       fun binWew(libro:libros, action:OnBookItemClickListener){
            itemView.findViewById<TextView>(R.id.title).text=libro.titulo
            itemView.findViewById<TextView>(R.id.descripcion).text=libro.descripcion
            itemView.findViewById<TextView>(R.id.precio).text=libro.precio
            Picasso.with(context).load(libro.image).into(itemView.findViewById<ImageView>(R.id.image))
+           val btncarrito=itemView.findViewById<ImageButton>(R.id.carrito)
+           btncarrito.setOnClickListener {
+               action.onItemclick(libro,adapterPosition)
+           }
        }
     }
 
 
     override fun onBindViewHolder(viewHolder: ViewHolder, i:Int)  {
         val libro=libroslista[i]
-        viewHolder.binWew(libro)
+        viewHolder.binWew(libro,clickListener)
     }
 
     override fun getItemCount(): Int {
@@ -47,5 +52,8 @@ class LibreryAdapter(private val context: Context): RecyclerView.Adapter<Librery
         }
 
     }
-
+ 
+}
+interface OnBookItemClickListener{
+    fun  onItemclick(libro: libros,position:Int)
 }

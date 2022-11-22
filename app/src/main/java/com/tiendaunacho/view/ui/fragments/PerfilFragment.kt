@@ -65,4 +65,21 @@ class PerfilFragment : Fragment() {
             imageView?.setImageURI(data?.data)
         }
     }
+
+    override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
+        super.onViewCreated(view, savedInstanceState)
+        val btm=view.findViewById<BottomNavigationView>(R.id.buttonnavigation)
+        btm.setOnNavigationItemReselectedListener {
+            when(it.itemId) {
+                R.id.home -> findNavController().navigate(R.id.action_perfilFragment_to_homeFragment)
+                R.id.perfilpersona -> findNavController().navigate(R.id.action_perfilFragment_self)
+                R.id.map -> findNavController().navigate(R.id.action_perfilFragment_to_mapaFragment)
+                R.id.cerrar -> {
+                    firebaseAuth.signOut()
+                    findNavController().navigate(R.id.action_libreriaFragment_to_loginActivity)
+                    true
+                }
+            }
+        }
+    }
 }

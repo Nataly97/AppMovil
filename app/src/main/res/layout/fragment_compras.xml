@@ -6,7 +6,55 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".view.ui.fragments.ComprasFragment">
 
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="103dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginRight="20dp"
+        android:background="@drawable/theme_gradients_backgroun">
 
+
+    <TextView
+        android:id="@+id/preciototal"
+        android:layout_width="208dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="125dp"
+        android:text="0"
+        android:background="@color/red"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="40dp">
+    </TextView>
+
+        <TextView
+            android:id="@+id/realizar"
+            android:layout_width="208dp"
+            android:layout_height="55dp"
+            android:layout_marginTop="125dp"
+            android:layout_marginLeft="200dp"
+            android:text="compra"
+            android:background="@color/azulclaro"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:textSize="40dp">
+        </TextView>
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/uninacho">
+    </ImageView>
+
+    </RelativeLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="220dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        android:id="@+id/recyclerviewcompra">
+    </androidx.recyclerview.widget.RecyclerView>
 
     <com.google.android.material.bottomnavigation.BottomNavigationView
         android:id="@+id/buttonnavigation"
@@ -20,5 +68,6 @@
         app:menu="@menu/menu_navigaton_bar" >
 
     </com.google.android.material.bottomnavigation.BottomNavigationView>
+
 
 </FrameLayout>

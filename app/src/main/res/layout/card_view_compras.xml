@@ -1,10 +1,11 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="wrap_content"
     xmlns:app="http://schemas.android.com/apk/res-auto"
 
-    android:id="@+id/card_librery"
+    android:id="@+id/card_compras"
     android:layout_margin="12dp"
     app:cardBackgroundColor="@color/azulclaro"
     app:cardCornerRadius="20dp"
@@ -70,13 +71,14 @@
         </TextView>
 
         <ImageButton
-            android:id="@+id/carrito"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
+            android:id="@+id/eliminar"
+            android:layout_width="48dp"
+            android:layout_height="48dp"
             android:layout_marginLeft="91dp"
             android:layout_toRightOf="@+id/title"
-            android:background="@color/color_orange"
-            android:src="@drawable/ic_baseline_shopping_cart_24">
+            android:background="@color/red"
+            android:src="@drawable/ic_baseline_delete_24"
+            tools:ignore="TouchTargetSizeCheck,SpeakableTextPresentCheck">
 
         </ImageButton>
 
@@ -84,3 +86,7 @@
 
 
 </androidx.cardview.widget.CardView>
+
+
+
+

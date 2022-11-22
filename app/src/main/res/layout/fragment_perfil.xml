@@ -60,7 +60,19 @@
         android:background="@drawable/style_borde_boton">
 
     </ImageButton>
-    
+
+    <com.google.android.material.bottomnavigation.BottomNavigationView
+        android:id="@+id/buttonnavigation"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/color_orange"
+        android:layout_marginTop="937dp"
+        app:itemIconTint="@color/black"
+        app:layout_constraintBottom_toBottomOf="parent"
+        tools:ignore="MissingConstrains"
+        app:menu="@menu/menu_navigaton_bar" >
+
+    </com.google.android.material.bottomnavigation.BottomNavigationView>
 
 
 </FrameLayout>

@@ -61,12 +61,24 @@
         <action
             android:id="@+id/action_comprasFragment_to_mapaFragment"
             app:destination="@id/mapaFragment" />
+        <action
+            android:id="@+id/action_comprasFragment_to_mapaFragment2"
+            app:destination="@id/mapaFragment" />
     </fragment>
     <fragment
         android:id="@+id/deseosFragment"
         android:name="com.tiendaunacho.view.ui.fragments.DeseosFragment"
         android:label="fragment_deseos"
         tools:layout="@layout/fragment_deseos" >
+        <action
+            android:id="@+id/action_deseosFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_deseosFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_deseosFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
     </fragment>
     <fragment
         android:id="@+id/perfilFragment"
@@ -88,12 +100,30 @@
         android:name="com.tiendaunacho.view.ui.fragments.AyudaFragment"
         android:label="fragment_ayuda"
         tools:layout="@layout/fragment_ayuda" >
+        <action
+            android:id="@+id/action_ayudaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_ayudaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_ayudaFragment_to_mapaFragment"
+            app:destination="@id/mapaFragment" />
     </fragment>
     <fragment
         android:id="@+id/mapaFragment"
         android:name="com.tiendaunacho.view.ui.fragments.MapaFragment"
         android:label="fragment_mapa"
         tools:layout="@layout/fragment_mapa" >
+        <action
+            android:id="@+id/action_mapaFragment_to_homeFragment"
+            app:destination="@id/homeFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_to_perfilFragment"
+            app:destination="@id/perfilFragment" />
+        <action
+            android:id="@+id/action_mapaFragment_self"
+            app:destination="@id/mapaFragment" />
     </fragment>
     <activity
         android:id="@+id/loginActivity"
