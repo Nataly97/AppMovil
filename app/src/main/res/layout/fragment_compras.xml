@@ -14,12 +14,21 @@
         android:layout_marginRight="20dp"
         android:background="@drawable/theme_gradients_backgroun">
 
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:src="@drawable/uninacho">
+        </ImageView>
+
+    </RelativeLayout>
+
+
 
     <TextView
         android:id="@+id/preciototal"
-        android:layout_width="208dp"
+        android:layout_width="210dp"
         android:layout_height="55dp"
-        android:layout_marginTop="125dp"
+        android:layout_marginTop="145dp"
         android:text="0"
         android:background="@color/red"
         android:textColor="@color/white"
@@ -27,31 +36,23 @@
         android:textSize="40dp">
     </TextView>
 
-        <TextView
-            android:id="@+id/realizar"
-            android:layout_width="208dp"
-            android:layout_height="55dp"
-            android:layout_marginTop="125dp"
-            android:layout_marginLeft="200dp"
-            android:text="compra"
-            android:background="@color/azulclaro"
-            android:textColor="@color/white"
-            android:textAlignment="center"
-            android:textSize="40dp">
-        </TextView>
-
-    <ImageView
-        android:layout_width="match_parent"
-        android:layout_height="match_parent"
-        android:src="@drawable/uninacho">
-    </ImageView>
-
-    </RelativeLayout>
+    <TextView
+        android:id="@+id/realizar"
+        android:layout_width="285dp"
+        android:layout_height="55dp"
+        android:layout_marginTop="145dp"
+        android:layout_marginLeft="208dp"
+        android:text="compra"
+        android:background="@color/azulclaro"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:textSize="40dp">
+    </TextView>
 
     <androidx.recyclerview.widget.RecyclerView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:layout_marginTop="220dp"
+        android:layout_marginTop="215dp"
         app:layout_constraintBottom_toBottomOf="parent"
         android:id="@+id/recyclerviewcompra">
     </androidx.recyclerview.widget.RecyclerView>
