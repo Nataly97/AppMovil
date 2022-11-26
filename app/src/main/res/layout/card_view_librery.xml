@@ -71,10 +71,11 @@
 
         <ImageButton
             android:id="@+id/carrito"
-            android:layout_width="40dp"
-            android:layout_height="40dp"
-            android:layout_marginLeft="91dp"
-            android:layout_toRightOf="@+id/title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="145dp"
+            android:layout_toRightOf="@+id/precio"
+            android:layout_below="@id/descripcion"
             android:background="@color/color_orange"
             android:src="@drawable/ic_baseline_shopping_cart_24">
 
