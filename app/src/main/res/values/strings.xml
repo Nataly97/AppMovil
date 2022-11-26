@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">TiendaUnacho</string>
+    <string name="recuperar"><u>Recuperar contraseña</u></string>
+    <string name="recuperarcontraseña">Recupera Contraseña</string>
+    <string name="ApiMap" templateMergeStrategy="preserve" translatable="false">AIzaSyCjV1-2ubL_MQKE3WSyNV1A6_ZaCBQ9MyE</string>
+
+</resources>

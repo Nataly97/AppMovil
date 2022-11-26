@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "959065121714",
+    "firebase_url": "https://unacholee-c58be-default-rtdb.firebaseio.com",
+    "project_id": "unacholee-c58be",
+    "storage_bucket": "unacholee-c58be.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:959065121714:android:8717e8d7ad361af502faab",
+        "android_client_info": {
+          "package_name": "com.tiendaunacho"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "959065121714-ivvme9e9bcd3v2b6bodphkk632mdpv6d.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyDFjLWMjLdf6QNf9V4hd7ftYqljkGYSvHA"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "959065121714-ivvme9e9bcd3v2b6bodphkk632mdpv6d.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
